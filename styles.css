@@ -1,0 +1,62 @@
+.div_boundary{
+    background-color: grey;
+    border-style: solid;
+    border-width: 5px;
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 450px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.div_screen{
+    margin-top: -16px;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 30px;
+}
+
+#div_input{
+    width: 496px;
+    height: 30px;
+    border-color: blue;
+}
+
+table{
+    margin-top: 30px;
+    width: 500px;
+    height: 400px;
+    border: 1px solid black ;
+}
+tr{
+    width: 500px;
+    height: 50px;
+    border: 1px solid black ;
+}
+
+td{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black ;
+}
+button{
+    width:50px;
+    height: 50px;
+}
+
+.input{
+    border: 1px solid black;
+    height: 10%;
+    background-color: white;
+
+}
+
+#number{
+    font-size:30px;
+    display:table;
+    float: right;
+}
+

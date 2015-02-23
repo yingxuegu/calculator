@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "styles.css" rel = "stylesheet" type="text/css">
+<script type = "text/javascript" src="function.js"></script>
+<title>Xueying's Calculator</title>
+</head>
+<body>
+
+<div class =div_boundary>
+
+    <div class =div_screen>
+        <p>abc</p>
+    </div>
+    <div class="input">
+    <span id="number">0</span>
+    </div>
+    <div>
+        <table>
+
+            <tr>
+                <td><button type="button" id="a3" value = "(" onclick="test(this)">(</button></td>
+                <td><button type="button" id="a2" value = ")" onclick="test(this)">)</button></td>
+                <td><button type="button" id="a1" value = "C" onclick="c()">C</button></td>
+                <td><button type="button" id="ba" value = "AC" onclick="test(this)">AC</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" id="b7" value = "7" onclick="test(this)">7</button></td>
+                <td><button type="button" id="b8" value = "8" onclick="test(this)">8</button></td>
+                <td><button type="button" id="b9" value = "9" onclick="test(this)">9</button></td>
+                <td><button type="button" id="bb" value = "d" onclick="test(this)">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" id="b6" value = "6" onclick="test(this)">6</button></td>
+                <td><button type="button" id="b5" value = "5" onclick="test(this)">5</button></td>
+                <td><button type="button" id="b4" value = "4" onclick="test(this)">4</button></td>
+                <td><button type="button" id="bc" value = "m" onclick="test(this)">*</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" id="b3" value = "3" onclick="test(this)">3</button></td>
+                <td><button type="button" id="b2" value = "2" onclick="test(this)">2</button></td>
+                <td><button type="button" id="b1" value = "1" onclick="test(this)">1</button></td>
+                <td><button type="button" id="bd" value = "+" onclick="test(this)">+</button></td>
+            </tr>
+
+
+            <tr>
+                <td><button type="button" id="b0" value = "0" onclick="test(this)">0</button></td>
+                <td><button type="button" id="c3" value = "." onclick="test(this)">.</button></td>
+                <td><button type="button" id="c2" value = "=" onclick="result()">=</button></td>
+                <td><button type="button" id="c1" value = "-" onclick="test(this)">-</button></td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
