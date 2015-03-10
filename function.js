@@ -9,7 +9,7 @@ function Btn(){
 }
 
 function c(){
-    alert("function c");
+    //alert("function c");
     var a=document.getElementById("number").innerHTML;
     a= a.substring(0, a.length-1);
     document.getElementById("number").innerHTML = a;
@@ -56,8 +56,8 @@ function result(){
         symbol[symbol.length] = v[i];
         }
     }
-    alert("symbol: "+symbol);
-    alert("number: "+number);
+    //alert("symbol: "+symbol);
+    //alert("number: "+number);
     stackn[0] = number[0];
     stackn[1] = number[1];
     stacks[0] = symbol[0];
@@ -68,69 +68,69 @@ function result(){
         var n1;
         var n2;
         var sym;
-        alert("stack number: "+stackn);
-        alert("stack symbol: "+stacks);
+        //alert("stack number: "+stackn);
+        //alert("stack symbol: "+stacks);
         i=i+1;
         n=n+1;
-        alert("left = "+compareLeft(stacks[stacks.length-1]));
-        alert("right= "+compareLeft(symbol[i]));
+        //alert("left = "+compareLeft(stacks[stacks.length-1]));
+        //alert("right= "+compareLeft(symbol[i]));
         if(typeof symbol[i] === 'undefined' || compareLeft(stacks[stacks.length-1])>= compareLeft(symbol[i])){
-            alert("left calculating begins")
+            //alert("left calculating begins")
             n1=parseFloat(stackn.pop());
-            alert("n1 "+n1);
+            //alert("n1 "+n1);
             n2=parseFloat(stackn.pop());
-            alert("n2 "+n2);
+            //alert("n2 "+n2);
 
             sym =stacks.pop();
-            alert("sym "+sym);
+            //alert("sym "+sym);
             n3=calculate(n1,n2,sym);
-            alert("n3: "+n3);
+            //alert("n3: "+n3);
             stackn.push(n3);
-            alert(number);
-            alert("n= "+n);
+            //alert(number);
+            //alert("n= "+n);
             if(typeof number[n+1] !== 'undefined'){
             stackn.push(number[n+1]);
-            alert("add a number:"+ number[n+1]);
+            //alert("add a number:"+ number[n+1]);
             }
             if(typeof symbol[i] !== 'undefined'){
             stacks.push(symbol[i]);
-            alert("add another symbol "+symbol[i]);
+            //alert("add another symbol "+symbol[i]);
             }
-            alert("stacks length = "+stacks.length);
+            //alert("stacks length = "+stacks.length);
         }
         else if(symbol[i]=="("){
             i=1+i;
             n=1+n;
-            alert("meet (");
+            //alert("meet (");
             stacks.push(symbol[i]);
-            alert("meet ( add symbol "+symbol[i]);
+            //alert("meet ( add symbol "+symbol[i]);
             stackn.push(number[n]);
-            alert("meet ( add number "+number[n]);
+            //alert("meet ( add number "+number[n]);
             n=n-2;
-            alert(n);
+            //alert(n);
 
         }
         else if(symbol[i]==")"){
-            alert("meet )");
+            //alert("meet )");
             n1=parseFloat(stackn.pop());
-            alert("n1 after ) : "+n1);
+            //alert("n1 after ) : "+n1);
             n2=parseFloat(stackn.pop());
-            alert("n2 after ) : "+n2);
+            //alert("n2 after ) : "+n2);
 
             sym =stacks.pop();
-            alert("sym after ): "+sym);
+            //alert("sym after ): "+sym);
             n3=calculate(n1,n2,sym);
-            alert("n3 after ): "+n3);
+            //alert("n3 after ): "+n3);
             stackn.push(n3);
         }
         else{
-            alert("right is larger");
+            //alert("right is larger");
             stacks.push(symbol[i]);
             stackn.push(number[n+1]);
 
         }
 
-        alert("loop number"+i);
+        //alert("loop number"+i);
 
     }
     document.getElementById("number").innerHTML = n3;
